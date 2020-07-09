@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="vendor/fontawesome-icons/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Zen Tasks | Tarefas</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Zen Tasks</h1>
+            </a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="users.html">Usuários</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projetos</a>
+                </li>
+                <li>
+                    <a href="my-profile.html">Meu perfil</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel">
+            <div class="to-do task-category" ondragover='onDragOver(event);' ondrop='onDrop(event);'>
+                <div class="task-header">
+                    <h1>A fazer</h1>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="on-progress task-category" ondragover='onDragOver(event);' ondrop='onDrop(event);'>
+                <div class="task-header">
+                    <h1>Em progresso</h1>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="testing task-category" ondragover='onDragOver(event);' ondrop='onDrop(event);'>
+                <div class="task-header">
+                    <h1>Testando</h1>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="done task-category" ondragover='onDragOver(event);' ondrop='onDrop(event);'>
+                <div class="task-header">
+                    <h1>Feito</h1>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script src="resources/data/data.js"></script>
+    <script src="resources/js/script.js"></script>
+</body>
+</html>

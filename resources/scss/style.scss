@@ -1,0 +1,573 @@
+@import '_fonts.scss';
+@import '_variables.scss';
+
+
+// Global
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $body-bg-color;
+    font-family: 'Gudea', 'Roboto', sans-serif;
+    color: $primary-color;
+    width: 100vw;
+}
+
+.center {
+    text-align: center;
+}
+
+// Index
+
+div.login-box {
+    margin: 0 auto;
+    width: 350px;
+    text-align: center;
+    margin-top: 120px;
+
+    h1 {
+        font-size: 72px;
+    }
+
+    form {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+
+    input, button {
+        width: 80%;
+        padding: 12px;
+        border: 0px solid black;
+        border-radius: 4px;
+        outline: none;
+        margin: 10px;
+    }
+
+    button {
+        background-color: $new-button-bg-color;
+        color: $primary-color;
+
+        &:hover {
+            background-color: $new-button-hover-bg-color;
+        }
+    }
+
+    div.create-account {
+        margin: 10px;
+    }
+}
+
+div.flex {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+// Projects
+
+div.projects {
+    padding: 30px 50px 50px 50px;
+
+    h1.welcome {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+div.project {
+    background-color: $container-bg-color;
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+}
+
+button.new-project {
+    margin-top: 20px;
+    float: right;
+}
+
+div.project-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+
+    button {
+        width: 120px;
+        height: 35px;
+        margin: 5px;
+    }
+}
+
+// Users
+
+div.users-main {
+    width: 97%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    h1 {
+        font-size: 42px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    table {
+        width: 100%;
+        background-color: $container-bg-color;
+        border: 0px solid black;
+        border-radius: 4px;
+
+        thead {
+            td {
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+
+        tbody {
+            td {
+                padding: 10px;
+            }
+
+            tr {
+                &:nth-child(odd) {
+                    background: $container-alt-bg-color;
+                } 
+            }
+        }
+
+        button {
+            background-color: $delete-button-bg-color;
+            padding: 5px;
+            color: $primary-color;
+            border: 0px solid black;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $delete-button-hover-bg-color;
+                cursor: pointer; 
+            }
+        }
+    }
+}
+
+.add-user {
+    text-align: center;
+    margin: 20px;
+}
+
+// Task details
+
+div.task-details {
+    width: 100%;
+    max-width: 1000px;
+    background-color: $container-bg-color;
+    border: 0px solid black;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 30px;
+
+    p {
+        font-size: 18px;
+    }
+}
+
+button.del-button {
+    background-color: black;
+}
+
+div.task-header {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-bottom: 8px;
+
+    span.task-id {
+        font-size: 24px;
+    }
+}
+
+p.task-description {
+    margin: 20px;
+    font-size: 18px;
+}
+
+p.allocated-users {
+    font-size: 50px;
+}
+
+a.allocated-users {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+// Create project
+
+div.create-project {
+    padding: 30px 50px 50px 50px;
+    text-align: center;
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+}
+
+form.create-project {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    background-color: $container-bg-color;
+    margin: 0 auto;
+
+    input, button {
+        border: 0px solid black;
+        border-radius: 4px;
+        margin: 8px;
+        width: 90%;
+        padding: 12px;
+        outline: none;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+// Dashboard
+
+h1.dashboard-title {
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+div.dashboard {
+    width: 97%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h1 {
+        margin-top: 28px;
+        margin-bottom: 8px;
+    }
+}
+
+div.graphic {
+    width: 100%;
+    background-color: $container-bg-color;
+    padding: 20px;
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
+// Sign up
+
+div.signup-box {
+    margin: 0 auto;
+    width: 97%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 120px;
+
+    h1 {
+        font-size: 72px;
+    }
+
+    form {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+
+    input {
+        width: 80%;
+        padding: 12px;
+        border: 0px solid black;
+        border-radius: 4px;
+        outline: none;
+        margin: 10px;
+    }
+ 
+    button {
+        background-color: $new-button-bg-color;
+        color: $primary-color;
+        width: 30%;
+        padding: 12px;
+        border: 0px solid black;
+        border-radius: 4px;
+        outline: none;
+        margin: 10px;
+
+        &:hover {
+            background-color: $new-button-hover-bg-color;
+        }
+    }
+}
+
+// My Profile
+
+div.container-profile {
+    width: 97%;
+    max-width: 1000px;
+    background-color: $container-bg-color;
+    margin: 0 auto;
+    border: 0px;
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.header-profile {
+    width: 97%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+div.user-picture {
+    width: 190px;
+    height: 100%;
+    text-align: center;
+
+    img {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label.change-pic {
+    margin: 0 auto;
+    background-color: $new-button-bg-color;
+    padding: 4px;
+    border: 0px;
+    border-radius: 3px;
+}
+
+div.user-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+
+    input, button {
+        width: 200px;
+        padding: 10px;
+        border: 0px;
+        border-radius: 6px;
+        margin: 5px;
+    }
+}
+
+
+// div.user-info {
+//     height: auto;
+// }
+
+// Main
+
+div.header {
+    width: 100%;
+    height: 60px;
+    background-color: $header-bg-color;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.navigation {
+    ul {
+        list-style-type: none;
+        display: flex;
+        height: 100%;
+
+        li {
+            height: 100%;
+            width: 150px;
+        }
+    }
+}
+
+div.logo {
+    height: 100%;
+    width: 200px;
+
+    h1 {
+        color: $logo-color;
+        font-size: 28px;
+    }
+}
+
+div.logo a, div.navigation a {
+    width: 100%;
+    height: 100%;
+    color: $primary-color;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: $header-hover-bg-color;
+    }
+}
+
+div.panel {
+    display: flex;
+    width: 100%;
+}
+
+div.task {
+    background-color: $task-bg-color;
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 10px 20px 20px 20px;
+    border-radius: 3px;
+    box-shadow: rgb(30, 38, 53) 0px 5px;
+
+    h2 {
+        color: $secondary-color;
+        font-weight: normal;
+        font-size: 20px;
+    }
+}
+
+div.task-category {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: $task-category-bg-color;
+    border-radius: 3px;
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+div.task-header {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: $primary-color;
+    }
+}
+
+button.new {
+    background-color: $new-button-bg-color;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px;
+    color: #DDD;
+    font-weight: lighter;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $new-button-hover-bg-color;
+    }
+}
+
+span.task-id {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+span.task-time {
+    background-color: $task-time-bg-color;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0 6px;
+    font-size: 14px;
+}
+
+i.fa-flag {
+    color: rgb(255, 66, 66);
+}
+
+@media only screen and (max-width : 800px) {
+    div.header {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    div.logo {
+        width: 150px;
+    }
+
+    div.navigation ul li {
+        height: 100%;
+        width: 70px;
+    }
+
+    // Main
+
+    div.panel {
+        display: block;
+        width: 100%;
+    }
+    
+    div.task-category {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    div.task {
+        width: 100%;
+    }
+
+    // Projects
+
+    div.project {
+        display: block;
+    }
+
+    div.project-buttons {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+        
+        button {
+            width: auto;
+            height: auto;
+            margin: 0px;
+            
+            
+            &:first-child {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    button.new-project {
+        float: none;
+    }
+
+    div.new-project {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
